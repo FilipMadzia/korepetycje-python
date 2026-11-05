@@ -3,7 +3,11 @@ import string
 
 def sprawdz_haslo(haslo):
     def zawiera(znaki):
-        return any(char in znaki for char in haslo)
+        # return any(char in znaki for char in haslo)
+        for char in haslo:
+            if char in znaki:
+                return True
+        return False
 
     niespelnione_wymagania = []
 
