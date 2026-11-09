@@ -1,1 +1,0 @@
-# [Link do prezentacji](https://docs.google.com/presentation/d/1tUdkb3t-uPTPWnd-zdjbp6pNon1WbZ5MAyQEG0DWCd0/edit?usp=sharing)
