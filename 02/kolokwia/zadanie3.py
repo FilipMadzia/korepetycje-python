@@ -39,4 +39,5 @@ def login_ucznia(imie, nazwisko, rok_rozpoczecia=2026):
 
     return login
 
-print(login_ucznia("An ną", "Ńowak ", ))
+login = login_ucznia("An ną", "Ńowak ", )
+print(login)

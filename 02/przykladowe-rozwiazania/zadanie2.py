@@ -3,7 +3,7 @@ liczba2 = int(input("Podaj liczbe 2: "))
 
 dozwolone_operacje = ["+", "-", "*", "/"]
 
-operacja = ""
+operacja = input("Podaj operacje: ")
 
 while operacja not in dozwolone_operacje:
     operacja = input("Podaj operacje: ")

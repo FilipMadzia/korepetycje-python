@@ -15,6 +15,13 @@ if "kot" not in slowa:
 
 # zamiana stringów
 
+tekst = "ciąg spi"
+slowa = tekst.split(" ") # ["kotlet", "spi"]
+nowy_tekst = tekst.replace("ą", "a")
+
+tekst = tekst.replace("kot", "pies")
+print(tekst) # pieslet spi
+
 zakupy = ["jablko", "banan", "gruszka"]
 tekst = "Lubie jesc jablko i banan" # pokaż działanie w przypadku "banany"
 
@@ -51,3 +58,10 @@ def podpis_zeszytu(przedmiot, imie, nazwisko, klasa="1a", **dodatkowe_informacje
     #     print(f"{x}: {dodatkowe_informacje[x]}")
 
 podpis_zeszytu("religia", "Ola", "Nowak", szkola="SP 5")
+
+# 1. wyświetlenie cennika
+# 2. pobierać ilość poszczególnych produktów
+# *3. pytać ponownie gdy ilość będzie ujemna
+# 4. policzyć całkowity koszt
+# 5. sprawdzić, czy dostawa jest darmowa
+# 6. wyświetlic rachunek
