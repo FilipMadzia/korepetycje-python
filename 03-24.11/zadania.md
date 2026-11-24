@@ -62,8 +62,6 @@ Plec: kobieta
 
 Wyświel dzień i miesiąc w formacie DD.MM. Gdy są liczbami jednocyfrowymi przed nimi powinno się znaleźć 0.
 
-Przykład
-
 ```
 Podaj nr PESEL: 71010751747
 Data urodzenia: 07.01.1971
@@ -86,8 +84,6 @@ Jeśli produktu nie ma w sklepie wyświetl komunikat o braku towaru.
 
 Po zakończeniu zakupów wyświetl łączną kwotę do zapłaty z dwoma miejscami po przecinku. 
 
-Przykład
-
 ```
 Cennik
 jablka: 4.99 zl/kg
@@ -108,4 +104,48 @@ Laczna kwota do zaplaty: 7.47 zl
 
 ### Dla chętnych
 
-Popraw wygląd interfejsu wedle uznania aby był bardziej czytelny np. poprzez przerwy między linijkami
+Popraw wygląd interfejsu wedle uznania aby był bardziej czytelny np. poprzez przerwy między linijkami (\n) albo wcięcia (\t)
+
+# Zadanie 4
+
+Napisz funkcję czy_doskonala(n), która sprawdzi, czy podana dodatnia liczba całkowita $n$ jest liczbą doskonałą (czyli taką, która jest równa sumie wszystkich swoich dzielników właściwych mniejszych od niej samej, np. $6 = 1 + 2 + 3$).
+
+Funkcja powinna zwracać wartość logiczną True lub False.
+
+W głównej części programu użyj pętli oraz napisanej funkcji, aby znaleźć i wyświetlić wszystkie liczby doskonałe z zakresu od 1 do 1000.
+
+Policz, ile takich liczb znaleziono, i wyświetl tę informację na końcu działania programu.
+
+```
+6 28 496
+Lacznie liczb doskonalych (zakres 1-1000): 3
+```
+
+# Zadanie 5
+
+Napisz program analizujący oceny studenta wpisane w jednym ciągu tekstowym.
+
+Napisz funkcję **lista_ocen(tekst)**, która przyjmie napis zawierający oceny oddzielone przecinkiem i spacją ("4.5, 3.0, 5.0, 2.0, 4.0") i rozdzieli go na elementy (metoda .split(", ")).
+
+Następnie każdy element zamieni na liczbę zmiennoprzecinkową i zwróci listę zawierającą wszystkie oceny
+
+Napisz drugą funkcję **podsumowanie(lista_ocen)**, która przyjmie listę ocen z funkcji **lista_ocen(tekst)** i zwróci trzy wartości: średnią arytmetyczną, najniższą oraz najwyższą ocenę. Jeśli lista jest pusta, funkcja powinna zwrócić same zera.
+
+Wczytaj oceny od użytkownika, wywołaj obie funkcje i wyświetl:
+- średnią
+- najniższą
+- najwyższą
+- czy uczeń zaliczył przedmiot (średnia co najmniej 3.0)
+
+```
+Podaj oceny oddzielone przecinkiem i spacja: 4.5, 3.0, 5.0, 2.0, 4.0
+Srednia: 3.7, najnizsza: 2.0, najwyzsza: 5.0
+Przedmiot zaliczony
+```
+
+### Dla chętnych
+
+Napisz funkcję **czy_poprawne_oceny(lista)** która sprawdzi, czy wszystkie oceny w liście są poprawne, wyświetli wszystkie ewentualne błędy:
+
+- zakres 1.0-6.0
+- kończą się na .0 lub .5 (przykładowo 3.2 byłaby niepoprawna)
