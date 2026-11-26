@@ -62,37 +62,37 @@ wynik
 Czekaj...Gotowy
 ```
 
-Argument sep="" mówi funkcji print() czym mają być rozdzielone poszczególne argumenty do wyświetlenia. Domyślnie jest to pusty string: ""
+Argument sep=" " mówi funkcji print() czym mają być rozdzielone poszczególne argumenty do wyświetlenia. Domyślnie jest to spacja: " "
 
 ```py
 imie = "Rodion"
 
-print("Witaj", imie, "w moim domu", sep=" ")
+print("Witaj", imie, "w moim domu", sep="-")
 ```
 
 wynik
 
 ```
-Witaj Rodion w moim domu
+Witaj-Rodion-w moim domu
 
-# bez sep=" " wynik byłby:
-# WitajRodionw moim domu
+# bez sep="-" wynik byłby:
+# Witaj Rodion w moim domu
 ```
 
-Warto zauważyć, że bez sep=" " tekst jest sklejony TYLKO pomiędzy poszczególnymi argumentami funkcji, spacje wewnątrz stringa "w moim domu" pozostały bez zmian
+Warto zauważyć, że sep="-" modyfikuje separator TYLKO pomiędzy poszczególnymi argumentami funkcji, spacje wewnątrz stringa "w moim domu" pozostały bez zmian
 
 end="" i sep="" można używać jednocześnie. Muszą być ostatnimi argumentami ale kolejność między nimi nie ma znaczenia
 
 ```py
 imie = "Agłaja"
 wiek = 21
-print("Nazywasz się", imie, "i masz", wiek, "lat", end="!", sep=" ")
+print("Nazywasz się", imie, "i masz", wiek, "lat", end="!", sep="...")
 ```
 
 wynik
 
 ```
-Nazywasz się Agłaja i masz 21 lat!
+Nazywasz się...Agłaja...i masz...21...lat!
 ```
 
 ## input()
